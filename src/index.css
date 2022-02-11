@@ -1,0 +1,77 @@
+/* =========================
+-> CSS RESET
+========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #eeeeee;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+p {
+  font-size: 1.2rem;
+}
+
+/* =========================
+-> Color Palette
+
+Blue    ->  #326dd1
+Black   ->  #010103
+White   ->  #eeeeee
+Orange  ->  #ffad60
+
+========================= */
+
+:root {
+  --blue: #326dd1;
+  --black: #010103;
+  --white: #eeeeee;
+  --orange: #ffad60;
+}
+
+/* ========================= 
+-> Background Colors
+========================= */
+
+.blueBg {
+  background-color: #326dd1;
+}
+.blackBg {
+  background-color: #010103;
+}
+.whiteBg {
+  background-color: #eee;
+}
+.orangeBg {
+  background-color: #ffad60;
+}
+
+/* ========================= 
+-> Text Colors
+========================= */
+
+.blueTxt {
+  color: #326dd1;
+}
+.blackTxt {
+  color: #010103;
+}
+.whiteTxt {
+  color: #eee;
+}
+.orangeTxt {
+  color: #ffad60;
+}
