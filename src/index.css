@@ -1,4 +1,21 @@
 /* =========================
+-> Color Palette
+
+Blue    ->  #326dd1
+Black   ->  #010103
+White   ->  #ffffff
+Orange  ->  #ffad60
+
+========================= */
+
+:root {
+  --blue: #326dd1;
+  --black: #010103;
+  --white: #fff;
+  --orange: #ffad60;
+}
+
+/* =========================
 -> CSS RESET
 ========================= */
 
@@ -11,11 +28,22 @@
 }
 html {
   font-size: 62.5%;
+  background-color: var(--black);
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #eeeeee;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.82),
+      rgba(0, 0, 0, 0.82)
+    ),
+    url("/public/images/mainbg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 a {
   color: inherit;
@@ -25,38 +53,21 @@ p {
   font-size: 1.2rem;
 }
 
-/* =========================
--> Color Palette
-
-Blue    ->  #326dd1
-Black   ->  #010103
-White   ->  #eeeeee
-Orange  ->  #ffad60
-
-========================= */
-
-:root {
-  --blue: #326dd1;
-  --black: #010103;
-  --white: #eeeeee;
-  --orange: #ffad60;
-}
-
 /* ========================= 
 -> Background Colors
 ========================= */
 
 .blueBg {
-  background-color: #326dd1;
+  background-color: var(--blue);
 }
 .blackBg {
-  background-color: #010103;
+  background-color: var(--black);
 }
 .whiteBg {
-  background-color: #eee;
+  background-color: var(--white);
 }
 .orangeBg {
-  background-color: #ffad60;
+  background-color: var(--orange);
 }
 
 /* ========================= 
@@ -64,14 +75,14 @@ Orange  ->  #ffad60
 ========================= */
 
 .blueTxt {
-  color: #326dd1;
+  color: var(--blue);
 }
 .blackTxt {
-  color: #010103;
+  color: var(--black);
 }
 .whiteTxt {
-  color: #eee;
+  color: var(--white);
 }
 .orangeTxt {
-  color: #ffad60;
+  color: var(--orange);
 }

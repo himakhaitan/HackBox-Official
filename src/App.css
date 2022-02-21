@@ -1,0 +1,9 @@
+.App {
+    padding: 4rem 5rem;
+}
+.header__main{
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+
+}
