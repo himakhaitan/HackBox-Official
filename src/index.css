@@ -1,7 +1,7 @@
 /* =========================
 -> Color Palette
 
-Blue    ->  #326dd1
+Blue    ->  #1C98ED
 Black   ->  #010103
 White   ->  #ffffff
 Orange  ->  #ffad60
@@ -9,7 +9,7 @@ Orange  ->  #ffad60
 ========================= */
 
 :root {
-  --blue: #326dd1;
+  --blue: #1C98ED;
   --black: #010103;
   --white: #fff;
   --orange: #ffad60;
@@ -34,8 +34,8 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(
-      to right bottom,
-      rgba(0, 0, 0, 0.82),
+      to right,
+      rgba(0, 0, 0, 0.65),
       rgba(0, 0, 0, 0.82)
     ),
     url("/public/images/mainbg.webp");
@@ -50,7 +50,19 @@ a {
   text-decoration: none;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswwald", sans-serif;
+  /* text-transform: uppercase; */
 }
 
 /* ========================= 
@@ -85,4 +97,10 @@ p {
 }
 .orangeTxt {
   color: var(--orange);
+}
+
+
+::selection {
+  background-color: var(--white);
+  color: var(--black);
 }

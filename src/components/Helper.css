@@ -1,0 +1,83 @@
+.btn__text {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  width: 21rem;
+  height: auto;
+}
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 5rem;
+  height: 5rem;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  border-radius: 3rem;
+  background-color: var(--white);
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  background: var(--black);
+}
+
+.arrow {
+  left: 1.825rem;
+  width: 1.125rem;
+  height: 0.185rem;
+  background: none;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.35rem;
+  right: 0.0625rem;
+  width: 0.925rem;
+  height: 0.925rem;
+  border-top: 0.185rem solid var(--black);
+  border-right: 0.185rem solid var(--black);
+  transform: rotate(45deg);
+}
+
+.button__text--main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0rem;
+  margin: 0 0 0 5.5rem;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.3;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.btn__text:hover .circle {
+    width: 100%;
+}
+.btn__text:hover .circle .icon.arrow {
+    background: var(--black);
+    transform: translate(1rem, 0);
+}
+.btn__text:hover .button__text--main {
+    color: var(--black);
+}
