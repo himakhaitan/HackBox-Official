@@ -29,6 +29,7 @@ Orange  ->  #ffad60
 html {
   font-size: 62.5%;
   background-color: var(--black);
+  scroll-behavior: smooth;
 }
 
 body {

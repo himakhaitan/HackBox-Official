@@ -5,7 +5,19 @@ const navData = [
     text: "Home",
   },
   {
-    href: "/sponsors",
+    href: "/#about",
+    text: "About Us",
+  },
+  {
+    href: "/#team",
+    text: "Team",
+  },
+  {
+    href: "/#sharks",
+    text: "Our Mentors",
+  },
+  {
+    href: "/#sponsor",
     text: "Sponsors",
   }
 ];

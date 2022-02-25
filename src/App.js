@@ -2,6 +2,27 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import { Button } from "./components/Helper";
 import Footer from "./components/Footer";
+import Member from "./components/Layout/Member";
+import { Heading } from "./components/Helper";
+
+const sponsorData = [
+  {
+    src: "https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+  },
+  {
+    src: "https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+  },
+  {
+    src: "https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+  },
+  {
+    src: "https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+  },
+  {
+    src: "https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+  },
+];
+
 function App() {
   return (
     <div className="App">
@@ -57,16 +78,8 @@ function App() {
           </p>
         </div>
       </section>
-      <section className="about">
-        <h1 className="about__main">
-          <span className="whiteTxt">What is</span>
-          <span className="blueTxt">
-            {" "}
-            <span className="whiteTxt">Hack</span>box
-            <span className="whiteTxt">?</span>
-          </span>
-        </h1>
-
+      <section id="about" className="about">
+        <Heading primary="What is" secondary="Hack" tertiary="box" quad="?" />
         <div className="about__data">
           <img className="about__img" src="/images/about.webp" />
           <div className="about__data--sec">
@@ -86,7 +99,94 @@ function App() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Member
+        data={[
+          {
+            src: "https://pbs.twimg.com/profile_images/1478298971315400704/1V3GYDdt_400x400.jpg",
+            name: "Himanshu Khaitan",
+            desc: "CEO",
+            linkedin: "https://www.linkedin.com/in/john-doe-1b9b7b1a0/",
+            twitter: "https://twitter.com/john_doe",
+          },
+          {
+            src: "https://pbs.twimg.com/profile_images/1478298971315400704/1V3GYDdt_400x400.jpg",
+            name: "John Doe",
+            desc: "CEO",
+            linkedin: "https://www.linkedin.com/in/john-doe-1b9b7b1a0/",
+            twitter: "https://twitter.com/john_doe",
+          },
+          {
+            src: "https://pbs.twimg.com/profile_images/1478298971315400704/1V3GYDdt_400x400.jpg",
+            name: "John Doe",
+            desc: "CEO",
+            linkedin: "https://www.linkedin.com/in/john-doe-1b9b7b1a0/",
+            twitter: "https://twitter.com/john_doe",
+          },
+          {
+            src: "https://pbs.twimg.com/profile_images/1478298971315400704/1V3GYDdt_400x400.jpg",
+            name: "John Doe",
+            desc: "CEO",
+            linkedin: "https://www.linkedin.com/in/john-doe-1b9b7b1a0/",
+            twitter: "https://twitter.com/john_doe",
+          },
+        ]}
+        primary="Meet"
+        tertiary="Our"
+        quad=" Sharks"
+        id="sharks"
+      />
+      <div className="sponsors">
+        <div className="sponsors__data">
+          {sponsorData.map((item, index) => {
+            return (
+              <div className="sponsor__item">
+                <img src={item.src} />
+              </div>
+            );
+          })}
+        </div>
+        <h1>
+          <span className="sponsor__text whiteTxt blackBg">Our </span>
+          <span className="sponsor__text blackTxt blueBg">Sponsors</span>
+        </h1>
+      </div>
+      <Member
+        id="team"
+        data={[
+          {
+            src: "https://pbs.twimg.com/profile_images/1478298971315400704/1V3GYDdt_400x400.jpg",
+            name: "Himanshu Khaitan",
+            desc: "CEO",
+            linkedin: "https://www.linkedin.com/in/john-doe-1b9b7b1a0/",
+            twitter: "https://twitter.com/john_doe",
+          },
+          {
+            src: "https://pbs.twimg.com/profile_images/1478298971315400704/1V3GYDdt_400x400.jpg",
+            name: "John Doe",
+            desc: "CEO",
+            linkedin: "https://www.linkedin.com/in/john-doe-1b9b7b1a0/",
+            twitter: "https://twitter.com/john_doe",
+          },
+          {
+            src: "https://pbs.twimg.com/profile_images/1478298971315400704/1V3GYDdt_400x400.jpg",
+            name: "John Doe",
+            desc: "CEO",
+            linkedin: "https://www.linkedin.com/in/john-doe-1b9b7b1a0/",
+            twitter: "https://twitter.com/john_doe",
+          },
+          {
+            src: "https://pbs.twimg.com/profile_images/1478298971315400704/1V3GYDdt_400x400.jpg",
+            name: "John Doe",
+            desc: "CEO",
+            linkedin: "https://www.linkedin.com/in/john-doe-1b9b7b1a0/",
+            twitter: "https://twitter.com/john_doe",
+          },
+        ]}
+        primary="Behind"
+        tertiary="The"
+        quad=" Scenes"
+      />
+      <Footer />
     </div>
   );
 }

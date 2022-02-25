@@ -81,3 +81,15 @@
 .btn__text:hover .button__text--main {
     color: var(--black);
 }
+
+.heading__main {
+  font-size: 4.5rem;
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-weight: 900;
+}
+
+.heading__main > span:nth-child(1){
+  background-color: var(--black);
+  padding: 0.3rem 1rem;
+}
